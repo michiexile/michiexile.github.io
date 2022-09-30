@@ -1,0 +1,17 @@
+{
+  "name": "michiexile-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx nuxi dev",
+    "build": "npx nuxi build",
+    "start": "npx nuxi start",
+    "generate": "npx nuxi generate"
+  },
+  "dependencies": {
+    "nuxt": "npm:nuxt3@latest"
+  },
+  "devDependencies": {
+    "@nuxt/content": "latest"
+  }
+}
