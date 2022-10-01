@@ -13,6 +13,8 @@ jobs:
   nuxt3deploy:
     runs-on: ${{ matrix.os }}
 
+    environment: github-pages
+
     strategy:
       matrix:
         os: [ubuntu-latest]

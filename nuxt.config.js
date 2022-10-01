@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         fonts: true
     },
     runtimeConfig: {
-        githubApiToken: process.env.GITHUB_API_TOKEN,
+        githubApiToken: process.env.API_TOKEN,
         public: {
             owner: "michiexile",
             homepage: "https://mikael.johanssons.org",
