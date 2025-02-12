@@ -9,7 +9,7 @@
     "generate": "npx nuxi generate"
   },
   "dependencies": {
-    "nuxt": "rc",
+    "nuxt": "3.15.4",
     "@iconify-prerendered/vue-academicons": "latest",
     "@iconify-prerendered/vue-fa6-solid": "latest",
     "@iconify-prerendered/vue-fa6-regular": "latest",
