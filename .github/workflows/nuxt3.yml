@@ -10,7 +10,7 @@ on:
 
 
 jobs:
-  - nuxt3deploy:
+  nuxt3deploy:
     runs-on: ${{ matrix.os }}
 
     environment: github-pages
@@ -44,7 +44,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
 
-  - workflow-keepalive:
+  workflow-keepalive:
     if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
     permissions:
