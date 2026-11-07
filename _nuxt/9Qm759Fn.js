@@ -1,0 +1,1 @@
+import{t as e}from"./CV4Hr_Fz.js";import{B as t,D as n,I as r,L as i}from"#entry";var a={__name:`ProseA`,props:{href:{type:String,default:``},target:{type:String,default:void 0,required:!1}},setup(a){let o=a;return(a,s)=>{let c=e;return r(),n(c,{href:o.href,target:o.target},{default:t(()=>[i(a.$slots,`default`)]),_:3},8,[`href`,`target`])}}};export{a as default};
