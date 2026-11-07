@@ -1,6 +1,7 @@
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
+    future: { compatibilityVersion: 4 },
     target: "static",
     ssr: true,
     modules: ['@nuxt/content', "@nuxtjs/tailwindcss"],
