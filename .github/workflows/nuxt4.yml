@@ -10,7 +10,7 @@ on:
 
 
 jobs:
-  nuxt3deploy:
+  nuxt4deploy:
     runs-on: ${{ matrix.os }}
 
     environment: github-pages
@@ -21,7 +21,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [20]
+        node: [26]
 
     steps:
       - name: Checkout
