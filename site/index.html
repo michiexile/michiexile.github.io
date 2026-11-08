@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="$description">
+    <meta name="theme-color" content="#f6f5f0">
+    <title>$title — $name</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/directory.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">Skip to projects</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="identity" href="$profile_url"><span class="identity-mark" aria-hidden="true">m<span>↗</span></span><span>$name</span></a>
+        <a class="profile-link" href="$profile_url">GitHub <span aria-hidden="true">↗</span></a>
+      </header>
+      <main id="main">
+        <section class="intro" aria-labelledby="page-title">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> An open collection</p>
+          <h1 id="page-title">$title<span class="title-period">.</span></h1>
+          <p class="intro-description">$description</p>
+          <div class="intro-meta"><a href="$profile_url">@$owner</a><span aria-hidden="true">/</span><span>$count $noun on GitHub Pages</span></div>
+        </section>
+        <section id="projects" class="directory" aria-label="Project directory" tabindex="-1">
+          <div class="directory-toolbar">
+            <p class="directory-label">The directory <span class="count" id="project-count">$count</span></p>
+            <div class="directory-controls" id="directory-controls" hidden>
+              <label class="search-field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 4.5 4.5"/></svg><span class="sr-only">Search projects</span><input id="search" type="search" placeholder="Find a project…" autocomplete="off" spellcheck="false"></label>
+              <label class="sort-field"><span class="sr-only">Sort projects</span><select id="sort"><option value="name">A → Z</option><option value="updated">Recently updated</option></select></label>
+            </div>
+          </div>
+          <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
+          <ul class="project-list" id="project-list">
+        $projects
+          </ul>
+          <div class="empty-state" id="empty-state" $empty_hidden><h2>No projects yet.</h2><p>Published projects will appear here after the next update.</p></div>
+          <div class="empty-state" id="no-results" hidden><h2>No matching projects.</h2><p>Try a different name, description, or language.</p><button id="clear-search" type="button">Clear search <span aria-hidden="true">↗</span></button></div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <p>Made to be explored. <a href="$profile_url">View all repositories <span aria-hidden="true">↗</span></a></p>
+        <p class="refresh-note">Refreshed daily · <time datetime="$updated_iso">$updated_label</time></p>
+      </footer>
+    </div>
+  </body>
+</html>
